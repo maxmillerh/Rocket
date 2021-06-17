@@ -1,0 +1,91 @@
+
+body{
+	background:#e9ecf1; /*цвет фона*/
+	width: 100%; /*ширина*/
+	height: 100%; /*высота*/
+	}
+
+#wrapper{
+	width:800px; /*общая ширина*/
+	margin:0 auto; /*внешний отступ*/
+	}
+
+
+
+
+h1{
+	color:#191970; /*цвет заголовка*/
+	font-family:calibri; /*шрифт*/
+	text-align:center; /*выравнивание*/
+	}
+
+header{
+	font-family: 'Pangolin', cursive; /*шрифт*/
+    width:798px; /*ширина шапки*/
+	height:40px; /*высота шапки*/
+	float:left;/*выравнивание*/
+	margin:0pt 0pt 35pt 0pt; /*внешний отступ*/
+	background:#FFFFFF; /*цвет шапки*/
+	box-shadow:0px 0px 10px 5px  rgba(221, 221, 221, 1); /*тень*/
+	}
+
+
+
+footer{
+	background:#1A1D47; /*цвет подвала*/
+    width:798px; /*ширина подвала*/
+    height:50px; /*высота подвала*/
+	float:left;/*выравнивание*/
+	margin:20pt 0pt 5pt 0pt; /*внешний отступ*/
+	box-shadow:0px 0px 10px 5px  rgba(221, 221, 221, 1); /*тень*/
+	}
+
+
+
+.a{
+	float:left;/*выравнивание*/
+	width:150px; /*ширина кнопок*/
+	height:20px; /*высота кнопок*/
+	margin:9px 5px 0px 25px; /*внешний отступ*/
+	text-align: center; /*выравнивание текста*/
+	text-decoration: none; /*убрать подчеркивание*/
+	border:1px solid #C0C0C0; /*рамка*/
+	background:#FFFFFF; /*цвет кнопок*/
+	box-shadow:0px 0px 5px 2px  rgba(221, 221, 221, 1); /*тень*/
+	}
+
+.a:hover {
+	background-color:#fff; /*фон кнопки при наведении*/
+	color:#FF4500; /*цвет текста при наведении*/
+	}
+
+.b{
+	float:left;/*выравнивание*/
+	width:200px; /*ширина картинок*/
+	height:200px; /*высота картинок*/
+	}
+	
+.q{
+	float:left;/*выравнивание*/
+	width:32px; /*ширина лого*/
+	height:32px; /*высота лого*/		
+    margin:9px 10px 5px 10px; /*внешний отступ*/
+	}
+
+.y{
+	text-align:center; /*выравнивание текста*/
+	margin:11pt 0pt 0pt 100pt; /*внешний отступ*/
+	color:#FFFFFF; /*цвет текста*/
+	float:left; /*выравнивание*/
+	}
+
+.content{	
+	width:768px; /*ширина блока контента*/
+	height:max-content; /*высота блока контента*/
+	float:left; /*выравнивание*/
+	margin:0pt 0pt 0pt 0pt; /*внешний отступ*/
+	background:#FFFFFF; /*цвет блока контента*/
+	padding: 0px 15px 20px 15px; /*внутренний отступ*/
+	box-shadow:0px 0px 10px 5px  rgba(221, 221, 221, 1); /*тень*/
+	}
+

@@ -1,0 +1,167 @@
+<html>
+
+<head>
+
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet"> 
+
+	<script type="text/javascript"> /*трясущиеся картинки*/
+		var range=2
+		var stop_it=0
+		var a=1
+
+		function init(given){
+		stop_it=0
+		shak_img=given
+		shak_img.style.left=0
+		shak_img.style.top=0
+		}
+
+		function shaking_image(){
+		if ((!document.all&&!document.getElementById)||stop_it==1)
+		return
+		if (a==1){shak_img.style.top=parseInt(shak_img.style.top)+range}
+		else if (a==2){shak_img.style.left=parseInt(shak_img.style.left)+range}
+		else if (a==3){shak_img.style.top=parseInt(shak_img.style.top)-range}
+		else{shak_img.style.left=parseInt(shak_img.style.left)-range}
+		if (a<4) a++
+		else a=1
+		setTimeout("shaking_image()",40)
+		}
+
+		function stop_shaking(given){
+		stop_it=1
+		given.style.left=0
+		given.style.top=0
+		}
+	</script>
+
+	<title>Экстримальные виды спорта</title>
+
+	<link rel=stylesheet href="style.css"> 
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+<header>
+
+	<a href="index.html"><img src="images/logoo.png" align=left></a>
+	
+	<a href="http://www.sport-express.ru/extreme/reviews/815020/" target="_blank" class="a">Самые опасные </a>
+
+	<a href="https://www.tripadvisor.ru/ShowUserReviews-g445048-d8114596-r359457055-Vologodskiy_AviasportClub_Dossaf-Vologda_Vologda_Oblast_Northwestern_District.html" target="_blank" class="a">Экстрим в Вологде</a>
+	
+	<a href="http://www.orangesmile.com/extreme/ru/adrenalin-places/index.htm" target="_blank" class="a">Лучшие места</a>
+
+	<a href="http://www.verticalextreme.ru/" target="_blank" class="a">Купить снаряжение</a>
+	
+</header>
+
+
+<content>
+
+	<h1>Экстримальные виды спорта</h1>
+
+	<div class="b">
+		<a href="parkour.html"><img src="images/parkour.jpg" title="Паркур" style="position:relative;"
+		onMouseover="init(this);shaking_image()" onMouseout="stop_shaking(this)"></a>
+	</div>
+
+	<div class="b">
+		<a href="mountaineering.html"><img src="images/mountaineering.jpg" title="Альпинизм" style="position:relative;"
+		onMouseover="init(this);shaking_image()" onMouseout="stop_shaking(this)"></a>
+	</div>
+
+	<div class="b">
+		<a href="bandzhi-jumping.html"><img src="images/bandzhi-jumping.jpg" title="Банджи-джампинг" style="position:relative;"
+		onMouseover="init(this);shaking_image()" onMouseout="stop_shaking(this)"></a>
+	</div>
+
+	<div class="b">
+		<a href="snowboarding.html"><img src="images/snowbording.jpg" title="Сноубординг" style="position:relative;"
+		onMouseover="init(this);shaking_image()" onMouseout="stop_shaking(this)"></a>
+	</div>
+
+	<div class="b">
+		<a href="slacklining.html"><img src="images/slacklining.jpg" title="Слэклайнинг" style="position:relative;"
+		onMouseover="init(this);shaking_image()" onMouseout="stop_shaking(this)"></a>
+	</div>
+
+	<div class="b">
+		<a href="kayaking.html"><img src="images/kayaking.jpg" title="Каякинг" style="position:relative;"
+		onMouseover="init(this);shaking_image()" onMouseout="stop_shaking(this)"></a>
+	</div>
+
+	<div class="b">
+		<a href="kaitserfing.html"><img src="images/kaitserfing.jpg" title="кайтсерфинг" style="position:relative;"
+		onMouseover="init(this);shaking_image()" onMouseout="stop_shaking(this)"></a>
+	</div>
+
+	<div class="b">
+		<a href="basedjumping.html"><img src="images/basedjumping.jpg" title="Бейсджампинг" style="position:relative;"
+		onMouseover="init(this);shaking_image()" onMouseout="stop_shaking(this)"></a>
+	</div>
+
+</content>
+
+
+<style>
+
+	.footer{
+		background:#1A1D47;
+		width:798px;
+		height:50px;
+		float:left;
+		margin:70pt 0pt 5pt 0pt;
+		box-shadow:0px 0px 10px 5px #000 rgba(221, 221, 221, 1); 
+		}
+	
+
+	header{
+		font-family: 'Pangolin', cursive;
+		width:798px;
+		height:40px;
+		float:left;
+		margin:0pt 0pt 65pt 0pt;
+		background:#FFFFFF;
+		box-shadow:0px 0px 10px 5px rgba(221, 221, 221, 1); 
+		}
+
+	body{
+		background-image: url(images/images.jpg);
+		width: 100%;
+		height: 100%;
+		
+		}
+</style>
+
+<div class="footer">
+
+
+	<div class="q">
+		<a href="https://vk.com/maxmillerr"><img src="images/vk.png" title="Я в ВКонтакте"></a>
+	</div>
+
+	<div class="q">
+		<a href="https://www.instagram.com/_maksmiller_/"><img src="images/inst.png" title="Я в Инстаграме"></a>
+	</div>
+
+	<div class="q">
+		<a href="https://twitter.com/Maxmillerzdecsi"><img src="images/twit.png" title="Я в Твитере"></a>
+	</div>
+	
+	<span class="y">© 2021 Racket. Все права защищены</span>
+	
+
+</div>
+
+</div>
+
+</body>
+
+</html>
